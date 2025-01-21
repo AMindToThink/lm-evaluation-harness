@@ -3,18 +3,19 @@
 from functools import partial
 
 import torch
-from jaxtyping import Float
 from sae_lens import SAE, HookedSAETransformer
 from torch import Tensor
 from transformer_lens import loading_from_pretrained
 from transformer_lens.hook_points import HookPoint
+from transformers.modeling_outputs import ModelOutput
 
 from lm_eval.api.registry import register_model
 from lm_eval.models.huggingface import HFLM
+from lm_eval.utils import eval_logger  # Add this import
 
 
 def steering_hook(
-    activations: Float[Tensor],  # Float[Tensor, "batch pos d_in"],
+    activations,  #: Float[Tensor, "batch pos d_in"], # the pre-commit hook wouldn't allow this
     hook: HookPoint,
     sae: SAE,
     latent_idx: int,
@@ -92,7 +93,17 @@ class InterventionModel(HookedSAETransformer):  # Replace with the specific mode
         with torch.no_grad():  # I don't know why this no grad is necessary; I tried putting everything into eval mode. And yet, this is necessary to prevent CUDA out of memory exceptions.
             with self.model.hooks(fwd_hooks=self.fwd_hooks):
                 output = self.model.forward(input_tensor, *args, **kwargs)
-        return output
+
+        return ModelOutput(logits=output)
+
+    def tie_weights(self):
+        """Tie the weights between the input embeddings and output embeddings"""
+        if hasattr(self.model, "tie_weights"):
+            self.model.tie_weights()
+            return
+        eval_logger.warning(
+            "No tie_weights method found on model - weights will not be tied"
+        )
 
 
 @register_model("sae_steered_beta")
@@ -114,5 +125,8 @@ class InterventionModelLM(HFLM):
                 delattr(self._model, name)
             torch.cuda.empty_cache()
 
-    def _model_call(self, inputs):
-        return self.swap_in_model.forward(inputs)
+    # def _model_call(self, inputs):
+    #     return self.swap_in_model.forward(inputs)
+    @property
+    def model(self):
+        return self.swap_in_model

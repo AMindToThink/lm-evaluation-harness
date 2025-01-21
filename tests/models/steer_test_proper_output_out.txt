@@ -1,0 +1,3 @@
+Loaded pretrained model google/gemma-2-2b into HookedTransformer
+Moving model to device:  cuda:0
+Moving model to device:  cuda
