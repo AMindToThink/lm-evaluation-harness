@@ -67,7 +67,7 @@ def clamp_original(sae_acts:Tensor, hook:HookPoint, latent_idx:int, value:float)
     Returns:
         Tensor: The modified SAE activations with the specified feature clamped
     """
-    
+    #import pdb;pdb.set_trace()
     mask = sae_acts[:, :, latent_idx] > 0  # Create a boolean mask where values are greater than 0
     sae_acts[:, :, latent_idx][mask] = value  # Replace values conditionally
 
@@ -116,30 +116,11 @@ class InterventionModel(HookedSAETransformer):  # Replace with the specific mode
         self.to(device)  # Ensure model is on the correct device
 
     @classmethod
-    def from_csv(
-        cls, csv_path: str, base_name: str, device: str = "cuda:0"
-    ) -> "InterventionModel":
-        """
-        Create an InterventionModel from a CSV file containing steering configurations.
-
-        Expected CSV format:
-        index, coefficient, sae_release, sae_id, description
-        12082, 240.0,gemma-scope-2b-pt-res-canonical,layer_20/width_16k/canonical, increase dogs
-        ...
-
-        Args:
-            csv_path: Path to the CSV file containing steering configurations
-            device: Device to place the model on
-
-        Returns:
-            InterventionModel with configured steering hooks
-        """
-        import pandas as pd
+    def from_dataframe(cls, df, base_name:str, device:str='cuda:0'):
         model = HookedSAETransformer.from_pretrained(base_name, device=device)
         original_saes = model.acts_to_saes
         assert original_saes == {} # There shouldn't be any SAEs to start
         # Read steering configurations
-        df = pd.read_csv(csv_path)
         # Create hooks for each row in the CSV
         sae_cache = {}
         # original_sae_hooks_cache = {}
@@ -160,8 +141,11 @@ class InterventionModel(HookedSAETransformer):  # Replace with the specific mode
             sae = get_sae(sae_release=sae_release, sae_id=sae_id)
             sae.use_error_term = True
             sae.eval()
+            # Add the SAE to the model after configuring its hooks
             model.add_sae(sae)
+            # First add all hooks to the SAE before adding it to the model
             hook_action = row.get("hook_action", "add")
+            after_activation_fn = f"{sae.cfg.hook_name}.hook_sae_acts_post"
             if hook_action == "add":
                 hook_name = f"{sae.cfg.hook_name}.hook_sae_input" # we aren't actually putting the input through the model
                 hook = partial(steering_hook_add_scaled_one_hot,
@@ -171,19 +155,42 @@ class InterventionModel(HookedSAETransformer):  # Replace with the specific mode
                               )
                 model.add_hook(hook_name, hook)
             elif hook_action == "clamp":
-                sae.add_hook("hook_sae_acts_post", partial(clamp_original, latent_idx=latent_idx, value=steering_coefficient))
-
+                #import pdb;pdb.set_trace()
+                model.add_hook(after_activation_fn, partial(clamp_original, latent_idx=latent_idx, value=steering_coefficient))
             elif hook_action == 'print':
-                sae.add_hook("hook_sae_acts_post", print_sae_acts)
+                model.add_hook(after_activation_fn, print_sae_acts)
             elif hook_action == 'debug':
-                sae.add_hook("hook_sae_acts_post", debug_steer)
+                model.add_hook(after_activation_fn, debug_steer)
             else:
                 raise ValueError(f"Unknown hook type: {hook_action}")
             
             
-
         # Create and return the model
         return cls(base_name=base_name, device=device, model=model)
+
+    @classmethod
+    def from_csv(
+        cls, csv_path: str, base_name: str, device: str = "cuda:0"
+    ) -> "InterventionModel":
+        """
+        Create an InterventionModel from a CSV file containing steering configurations.
+
+        Expected CSV format:
+        index, coefficient, sae_release, sae_id, description
+        12082, 240.0,gemma-scope-2b-pt-res-canonical,layer_20/width_16k/canonical, increase dogs
+        ...
+
+        Args:
+            csv_path: Path to the CSV file containing steering configurations
+            device: Device to place the model on
+
+        Returns:
+            InterventionModel with configured steering hooks
+        """
+        import pandas as pd
+        df = pd.read_csv(csv_path)
+
+        return InterventionModel.from_dataframe(df=df, base_name=base_name, device=device)
 
     def forward(self, *args, **kwargs):
         # Handle both input_ids and direct tensor inputs
