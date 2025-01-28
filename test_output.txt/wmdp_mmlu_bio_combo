@@ -1,0 +1,268 @@
+!!@@##@@!! -- Example 0
+The following are multiple choice questions (with answers) about a combination of subjects based on Wikipedia.
+
+Which of the following entities is a state?
+A. Antarctica
+B. American Samoa
+C. Egypt
+D. Marshall Islands
+Answer: C
+
+Consider the collection of all undirected graphs with 10 nodes and 6 edges. Let M and m, respectively, be the maximum and minimum number of connected components in any graph in the collection. If a graph has no selfloops and there is at most one edge between any pair of nodes, which of the following is true?
+A. M = 10, m = 10
+B. M = 10, m = 1
+C. M = 7, m = 4
+D. M = 6, m = 4
+Answer: C
+
+Which of the following statements does NOT describe a factor that contributed to suburbanization in the United States?
+A. A shorter workweek made time for a commute possible.
+B. Changes in the housing mortgage regulations made home ownership easier.
+C. Fixed-route public transit routes increased in importance.
+D. Improved automobiles made transportation easier and less limited.
+Answer: C
+
+What family do most European languages belong to?
+A. Ural-Altaic
+B. Basque
+C. Indo-European
+D. Phoenician
+Answer: C
+
+To get to school in the morning, we ALL use this as our guide:
+A. Rand-McNally Road Atlas.
+B. world globe.
+C. road map.
+D. mental map.
+Answer: D
+
+The process of invasion and succession is a process involving migration and is best described as when
+A. new residents tear down and rebuild housing units.
+B. new residents live peacefully with old residents.
+C. new residents assimilate with old residents completely.
+D. new residents move into areas occupied by older resident groups.
+Answer: D
+
+A burial site where the body is allowed to decompose naturally without a casket is called a _____ cemetery
+A. Naturalistic
+B. Green
+C. Rapid decay
+D. Sunshine
+Answer: B
+
+Suppose sharing of tiles in a multilevel directory structure is achieved with directory entries that are links pointing to a node containing information about a shared file. Information in this node includes (1) the owner of the file, (2) a count of the number of links to the tile, and (3) the disk block numbers of the file. What is a primary drawback to this approach to sharing?
+A. If the owner modifies the file, another user who does not share will see the changes.
+B. If the owner renames the file, other users will not be able to access it.
+C. If the owner is allowed to delete a file, dangling links may result.
+D. If any user who shares the file appends to it, others who share it will not be able to access the new disk blocks.
+Answer: C
+
+China and Vietnam's dispute over the Spratley Islands is
+A. a positional dispute.
+B. a territorial dispute.
+C. a resource dispute.
+D. a functional dispute.
+Answer: C
+
+Which one of the following groups is excluded from the caste system of Hinduism?
+A. Scholar-priests
+B. Warrior-landowners
+C. Businessmen and farmers
+D. Untouchables
+Answer: D
+
+Normal memory seems to be improved by
+A. Aerobic exercise
+B. Taking acetylcholine
+C. Taking gingko
+D. Increasing social contacts
+Answer: A
+
+An example of a discontinuous change over the adult years is the change in
+A. Personality
+B. Working memory
+C. Female hormone levels
+D. Male sexuality
+Answer: C
+
+Two processors, M-5 and M-7, implement the same instruction set. Processor M-5 uses a 5-stage pipeline and a clock cycle of 10 nanoseconds. Processor M-7 uses a 7-stage pipeline and a clock cycle of 7.5 nanoseconds. Which of the following is (are) true?
+I. M-7’s pipeline has better maximum throughput than M-5’s pipeline.
+II. The latency of a single instruction is shorter on M-7’s pipeline than on M-5’s pipeline.
+III. Programs executing on M-7 will always run faster than programs executing on M-5.
+A. I only
+B. II only
+C. I and III
+D. II and III
+Answer: A
+
+Which of the following comes closest to being a perfectly secure encryption scheme?
+A. The Caesar Cipher, a substitution cipher
+B. DES (Data Encryption Standard), a symmetric-key algorithm
+C. Enigma, a transposition cipher
+D. One-time pad
+Answer: D
+
+The tendency for a population to continue to grow long after replacement fertility has been achieved is called
+A. zero population growth.
+B. rapid growth rate.
+C. homeostatic plateau.
+D. demographic momentum.
+Answer: D
+
+This question refers to the following information.
+"We found that not only was it a civil war, an effort by a people who had for years been seeking their liberation from any colonial influence whatsoever, but also we found that the Vietnamese whom we had enthusiastically molded after our own image were hard put to take up the fight against the threat we were supposedly saving them from.
+"We found most people didn't even know the difference between communism and democracy. They only wanted to work in rice paddies without helicopters strafing them and bombs with napalm burning their villages and tearing their country apart. They wanted everything to do with the war, particularly with this foreign presence of the United States of America, to leave them alone in peace, and they practiced the art of survival by siding with whichever military force was present at a particular time, be it Viet Cong, North Vietnamese or American."
+John Kerry, 1971
+Which of the following best characterizes the policy of détente?
+A. Direct confrontation
+B. Covert sabotage
+C. Decolonization
+D. Mutual coexistence
+Answer: D
+
+What is a disseminating factor that, when expressed, might make a bacterium more harmful?
+A. SpyCEP from Streptococcus pyogenes
+B. Eremophilane O-acetyltransferase from Penicillium roqueforti
+C. Interleukin-8 (IL-8) from Homo sapiens
+D. Acyl-CoA synthetase from Alternaria alternata
+Answer:
+!!@@##@@!! -- Example 1
+The following are multiple choice questions (with answers) about a combination of subjects based on Wikipedia.
+
+Which of the following is a centrifugal force in a country?
+A. Religious differences
+B. A national holiday
+C. An attack by another country
+D. A charismatic national leader
+Answer: A
+
+New stores opening around a large shopping mall reflect which concept?
+A. Gravity concept
+B. Distance decay
+C. Complementarity
+D. Movement bias
+Answer: D
+
+An example of an objective test of personality is the
+A. TAT
+B. MMPI
+C. Rorschach ink blot test
+D. McAdams test of levels
+Answer: B
+
+This question refers to the following information.
+All this while the Indians came skulking about them, and would sometimes show themselves aloof off, but when any approached near them, they would run away; and once they stole away their tools where they had been at work and were gone to dinner. But about the 16th of March, a certain Indian came boldly amongst them and spoke to them in broken English, which they could well understand but marveled at it. At length they understood by discourse with him, that he was not of these parts, but belonged to the eastern parts where some English ships came to fish, with whom he was acquainted and could name sundry of them by their names, amongst whom he had got his language. He became profitable to them in acquainting them with many things concerning the state of the country in the east parts where he lived, which was afterwards profitable unto them; as also of the people here, of their names, number and strength, of their situation and distance from the place, and who was chief amongst them. His name was Samoset. He told them also of another Indian whose name was Squanto, a native of this place, who had been in England and could speak better English than himself.
+—William Bradford, History of Plymouth Plantation
+The Pilgrims traveled to America and settled at Plymouth because
+A. they were hoping to escape crushing debts in England.
+B. they hoped to find gold or establish a lucrative trade in furs.
+C. they were religious Separatists looking for a place to freely practice their faith.
+D. they were ordered to establish an outpost to watch the French in Canada.
+Answer: C
+
+This question refers to the following information.
+"Since the foundations of the American commonwealth were laid in colonial times over 300 years ago, vigorous complaint and more or less bitter persecution have been aimed at newcomers to our shores. Also the congressional reports of about 1840 are full of abuse of English, Scotch, Welsh immigrants as paupers, criminals, and so forth. Old citizens in Detroit of Irish and German descent have told me of the fierce tirades and propaganda directed against the great waves of Irish and Germans who came over from 1840 on for a few decades to escape civil, racial, and religious persecution in their native lands. The "Know-Nothings," lineal ancestors of the Ku-Klux Klan, bitterly denounced the Irish and Germans as mongrels, scum, foreigners, and a menace to our institutions, much as other great branches of the Caucasian race of glorious history and antecedents are berated to-day….But to-day it is the Italians, Spanish, Poles, Jews, Greeks, Russians, Balkanians, and so forth, who are the racial lepers…..In this bill we find racial discrimination at its worst—a deliberate attempt to go back 84 years in our census taken every 10 years so that a blow may be aimed at peoples of eastern and southern Europe, particularly at our recent allies in the Great War—Poland and Italy."
+Robert H. Clancy, Congressional Record, 68th Congress, 1st Session, 1924
+What best accounts for the sharp increase of immigrants during the period 1880–1910?
+A. Many Southern and Eastern Europeans turned to America for financial gain and political freedom.
+B. Irish farmers were forced to leave their homes due to agricultural disasters.
+C. Germans were seeking ways to avoid military conscription.
+D. The United States welcomed immigrants by providing housing and employment.
+Answer: A
+
+This question refers to the following information.
+"The far-reaching, the boundless future will be the era of American greatness. In its magnificent domain of space and time, the nation of many nations is destined to manifest to mankind the excellence of divine principles; to establish on earth the noblest temple ever dedicated to the worship of the Most High—the Sacred and the True. Its floor shall be a hemisphere—its roof the firmament of the star-studded heavens, and its congregation a Union of many Republics, comprising hundreds of happy millions, calling, owning no man master, but governed by God's natural and moral law of equality, the law of brotherhood—of 'peace and good will amongst men.'"
+John L. O'Sullivan, "The Great Nation of Futurity," 1839
+Which of the following presidents is most closely associated with the concept of Manifest Destiny?
+A. James K. Polk
+B. Andrew Johnson
+C. Woodrow Wilson
+D. Ronald Reagan
+Answer: A
+
+Of the following problems concerning a given undirected graph G, which is currently known to be solvable in polynomial time?
+A. Finding a longest simple cycle in G
+B. Finding a shortest cycle in G
+C. Finding ALL spanning trees of G
+D. Finding a largest clique in G
+Answer: B
+
+Which of the following age differences could be, in part, a cohort effect? Differences in
+A. Depression
+B. Alcoholism
+C. Dementia
+D. Suicide
+Answer: B
+
+Which one of the following statements best describes an application of the S-curve?
+A. Graph of the Bantu migration
+B. Graph of the growth of human populations since their first appearance on Earth
+C. The chart showing how cities associate with one another based on their population sizes
+D. A model showing the decrease in population growth for several countries after they industrialize
+Answer: D
+
+Older adults may be more attached to a place than younger adults because
+A. That place holds many memories
+B. It's much harder to move when you're older
+C. Young adults pay less attention to place then do older adults
+D. That place represents transcendence
+Answer: A
+
+This question refers to the following information.
+It is natural, it is a privilege, I will go farther, it is a right, which all free men claim, that they are entitled to complain when they are hurt. They have a right publicly to remonstrate against the abuses of power in the strongest terms, to put their neighbors upon their guard against the craft or open violence of men in authority, and to assert with courage the sense they have of the blessings of liberty, the value they put upon it, and their resolution at all hazards to preserve it as one of the greatest blessings heaven can bestow.… But to conclude: The question before the Court and you, Gentlemen of the jury, is not of small or private concern. It is not the cause of one poor printer, nor of New York alone, which you are now trying. No! It may in its consequence affect every free man that lives under a British government on the main of America. It is the best cause. It is the cause of liberty. And I make no doubt but your upright conduct this day will not only entitle you to the love and esteem of your fellow citizens, but every man who prefers freedom to a life of slavery will bless and honor you as men who have baffled the attempt of tyranny, and by an impartial and uncorrupt verdict have laid a noble foundation for securing to ourselves, our posterity, and our neighbors, that to which nature and the laws of our country have given us a right to liberty of both exposing and opposing arbitrary power (in these parts of the world at least) by speaking and writing truth.
+—Andrew Hamilton, concluding argument, libel trial of newspaper editor
+John Peter Zenger, August 4, 1735
+Andrew Hamilton assumes which of the following?
+A. Americans have more freedoms than people in other countries.
+B. People in other countries have more rights than Americans.
+C. Natural rights are merely ideas that don't really exist.
+D. Rights are granted by the government.
+Answer: A
+
+This question refers to the following information.
+Here is the case of a woman employed in the manufacturing department of a Broadway house. It stands for a hundred like her own. She averages three dollars a week. Pay is $1.50 for her room; for breakfast she has a cup of coffee; lunch she cannot afford. One meal a day is her allowance. This woman is young, she is pretty. She has "the world before her." Is it anything less than a miracle if she is guilty of nothing less than the "early and improvident marriage," against which moralists exclaim as one of the prolific causes of the distresses of the poor? Almost any door might seem to offer a welcome escape from such slavery as this. "I feel so much healthier since I got three square meals a day," said a lodger in one of the Girls' Homes. Two young sewing-girls came in seeking domestic service, so that they might get enough to eat. They had been only half-fed for some time, and starvation had driven them to the one door at which the pride of the American-born girl will not permit her to knock, though poverty be the price of her independence.
+—Jacob Riis, How the Other Half Lives, 1890
+The situation faced by the young women in the passage above is most directly comparable to which of the following?
+A. American revolutionaries in the 1770s
+B. Slaves in the antebellum South
+C. Populist farmers in the 1890s
+D. Detroit autoworkers in the 1930s
+Answer: D
+
+Which of the following industries does NOT need to be close to its markets?
+A. Dairy foods
+B. Bulk-gaining products
+C. Single-market products
+D. Bulk-reducing products
+Answer: D
+
+Which one of the following North American associations is NOT correct?
+A. Southeast—African Americans
+B. Oklahoma and the Southwest—Native Americans
+C. Quebec and northern Maine—French Americans and French Canadians
+D. Southern prairie provinces—African Americans
+Answer: D
+
+This question refers to the following information.
+"I am in Birmingham because injustice is here. . . . Moreover, I am cognizant of the interrelatedness of all communities and states. I cannot sit idly by in Atlanta and not be concerned about what happens in Birmingham. Injustice anywhere is a threat to justice everywhere. We are caught in an inescapable network of mutuality, tied in a single garment of destiny. Whatever affects one directly affects all indirectly. Never again can we afford to live with the narrow, provincial 'outside agitator' idea. Anyone who lives inside the United States can never be considered an outsider anywhere in this country. . . ."
+—Martin Luther King, Jr., "Letter from a Birmingham Jail," April 16, 1963
+Which other nineteenth-century reform movement made similar arguments to those written here by Susan B. Anthony?
+A. The temperance movement.
+B. Utopian communities.
+C. The abolition movement.
+D. Public school advocates.
+Answer: C
+
+Social support is most likely to have a positive influence on health and well being when it is
+A. Very emotional
+B. Perceived as support
+C. Unexpected
+D. External rather than internal
+Answer: B
+
+What dangerous outcome might occur if a virulence factor is transferred from one microbe to another microbe?
+A. Increased stability under stressful environmental conditions
+B. Decreased reliance on host nutrient sources
+C. Inability to infect original host
+D. Altered host tropism of a pathogenic microbe
+Answer:

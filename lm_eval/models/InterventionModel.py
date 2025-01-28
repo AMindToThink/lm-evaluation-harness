@@ -85,9 +85,9 @@ def clamp_conditional(sae_acts:Tensor, hook:HookPoint, latent_idx:int, value:flo
     Returns:
         Tensor: The modified SAE activations with the specified feature clamped
     """
-    
+    REFUSAL = 15864
     mask = sae_acts[:, :, latent_idx] > clamp_value  # Create a boolean mask where values are greater than 0
-    sae_acts[:, :, latent_idx][mask] = value  # Replace values conditionally
+    sae_acts[:, :, REFUSAL][mask] = value  # Replace values conditionally
 
     return sae_acts
 

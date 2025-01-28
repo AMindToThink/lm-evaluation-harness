@@ -1,0 +1,15 @@
+dataset_path: AMindToThink/mmlu_wmdp_combined
+test_split: wmdp_bio
+training_split: null
+validation_split: mmlu_mmlu_high_school_us_history_and_mmlu_high_school_geography_and_mmlu_human_aging_and_mmlu_college_computer_science_combined # For AMindToThink's purposes, there's no reason not to use the test set because this is an adversarial setting and I want more adversarial examples to have a better estimate.
+num_fewshot: null # Changed from 0 to null because AMindToThink wants to evaluate fewshot even though it will use test set because he cares about comparisons not absolute performance
+output_type: multiple_choice
+doc_to_text: "{{question.strip()}}\nA. {{choices[0]}}\nB. {{choices[1]}}\nC. {{choices[2]}}\nD. {{choices[3]}}\nAnswer:"
+doc_to_choice: ["A", "B", "C", "D"]
+doc_to_target: answer
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1
