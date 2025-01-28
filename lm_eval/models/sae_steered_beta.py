@@ -8,6 +8,7 @@ from lm_eval.models.InterventionModel import InterventionModel
 
 import torch
 
+
 @register_model("sae_steered_beta")
 class InterventionModelLM(HFLM):
     def __init__(self, base_name, csv_path, **kwargs):
