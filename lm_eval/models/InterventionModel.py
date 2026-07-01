@@ -87,6 +87,7 @@ def clamp_conditional(sae_acts:Tensor, hook:HookPoint, latent_idx:int, value:flo
     """
     mask = sae_acts[:, :, latent_idx] > clamp_value  # Create a boolean mask where values are greater than 0
     sae_acts[:, :, latent_idx][mask] = value  # Replace values conditionally
+    return sae_acts
 
 def clamp_refusal(sae_acts:Tensor, hook:HookPoint, latent_idx:int, value:float, clamp_value:float, refusal_idx:int) -> Tensor:
     """Clamps a specific latent feature in the SAE activations to a fixed value.
@@ -124,6 +125,7 @@ def print_sae_acts(sae_acts:Tensor, hook:HookPoint) -> Tensor:
     print(sae_acts.shape)
     print(torch.all(sae_acts > 0))
     return sae_acts
+
 def debug_steer(sae_acts: Tensor, hook:HookPoint) -> Tensor:
     import pdb; pdb.set_trace()
     pass
